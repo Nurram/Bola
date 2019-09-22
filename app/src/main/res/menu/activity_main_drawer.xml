@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Match">
+            <menu>
+                <item
+                        android:id="@+id/menu_find_match"
+                        android:icon="@drawable/ic_search"
+                        android:title="Find Match"/>
+
+                <item
+                        android:id="@+id/menu_last_match"
+                        android:icon="@drawable/ic_finish"
+                        android:title="Last Match"/>
+
+                <item
+                        android:id="@+id/menu_next_match"
+                        android:icon="@drawable/ic_upcoming"
+                        android:title="Next Match"/>
+            </menu>
+        </item>
+
+        <item android:title="Teams">
+            <menu>
+                <item
+                        android:id="@+id/menu_find_team"
+                        android:icon="@drawable/ic_search"
+                        android:title="Find Team"/>
+                <item
+                        android:id="@+id/menu_team_list"
+                        android:icon="@drawable/ic_list"
+                        android:title="Team List"/>
+            </menu>
+        </item>
+
+        <item android:title="Favourite">
+            <menu>
+                <item
+                        android:id="@+id/menu_fav_match"
+                        android:icon="@drawable/ic_bookmark"
+                        android:title="Favourite Match"/>
+
+                <item
+                        android:id="@+id/menu_fav_team"
+                        android:icon="@drawable/ic_bookmark"
+                        android:title="Favourite  Team"/>
+            </menu>
+        </item>
+    </group>
+</menu>

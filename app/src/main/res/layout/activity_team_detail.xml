@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/team_detail_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".View.TeamDetailActivity">
+
+    <include layout="@layout/app_bar_main"
+             android:id="@+id/appbar"/>
+
+    <ImageView
+            android:id="@+id/team_detail_cover"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:layout_below="@+id/appbar"
+            android:layout_margin="16dp"/>
+
+    <TextView
+            android:id="@+id/team_detail_name"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            tools:text="Arsenal"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/team_detail_cover"
+            android:layout_below="@+id/appbar"/>
+
+    <TextView
+            android:id="@+id/team_detail_established"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/formed_at"
+            android:layout_below="@+id/team_detail_name"
+            android:layout_toEndOf="@+id/team_detail_cover"/>
+
+    <TextView
+            android:id="@+id/team_detail_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/website"
+            android:layout_below="@+id/team_detail_established"
+            android:layout_toEndOf="@+id/team_detail_cover"/>
+
+    <TextView
+            android:id="@+id/team_detail_youtube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/youtube"
+            android:layout_below="@+id/team_detail_website"
+            android:layout_toEndOf="@+id/team_detail_cover"/>
+
+    <TextView
+            android:id="@+id/team_detail_player_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/player_list"
+            android:textStyle="bold"
+            android:layout_below="@+id/team_detail_cover"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/team_detail_player_list"
+            android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/team_detail_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <ProgressBar
+                android:id="@+id/team_detail_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>
