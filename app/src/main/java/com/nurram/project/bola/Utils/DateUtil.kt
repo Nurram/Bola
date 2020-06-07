@@ -5,7 +5,7 @@ import java.util.*
 
 object DateUtil{
     fun convertTime(time: String?, date: String?): String{
-        val dateFormatter = SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+        val dateFormatter = SimpleDateFormat("yyyy-MM-dd")
         dateFormatter.timeZone = TimeZone.getTimeZone("UTC")
 
         val dateTime = "$date $time"
